@@ -82,6 +82,8 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-start",
 }));
 
+
+
 export default function PersistentDrawerRight() {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
@@ -97,10 +99,10 @@ export default function PersistentDrawerRight() {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open}>
+      <AppBar color="default" position="fixed" open={open}>
         <Toolbar>
           <Typography variant="h6" noWrap sx={{ flexGrow: 1 }} component="div">
-            Persistent drawer
+            Catering Assistant
           </Typography>
           <IconButton
             color="inherit"
