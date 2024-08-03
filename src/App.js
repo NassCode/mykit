@@ -2,6 +2,7 @@ import logo from './logo.svg';
 //import './App.css';
 import PersistentDrawerRight from './components/Drawer';
 import background from './components/bgm.jpg' 
+import PositionedSnackbar from './components/Snkbar';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
     
     >
       <PersistentDrawerRight />
+      <PositionedSnackbar />
     </div>
   );
 }
