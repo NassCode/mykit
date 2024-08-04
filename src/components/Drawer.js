@@ -27,6 +27,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import Categories from "./Categories";
 
 const drawerWidth = 240;
 
@@ -84,7 +85,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 
 
 
-export default function PersistentDrawerRight() {
+export default function PersistentDrawerRight({ categories, addCategory }) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -117,6 +118,8 @@ export default function PersistentDrawerRight() {
       </AppBar>
       <Main open={open}>
         <DrawerHeader />
+
+        <Categories addCategory={addCategory} categories={categories} />
         
       </Main>
       <Drawer
